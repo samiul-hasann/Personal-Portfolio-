@@ -1,0 +1,559 @@
+html {
+    scroll-behavior: smooth;
+}
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, Georgia, Tahoma;
+}
+
+/* Body Styles */
+body {
+    background-color: #f2ebe9;
+    color: #fff;
+    line-height: 1.6;
+    height: 100%;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #eddcd9;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff5500;
+    text-decoration: none;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+header nav ul li {
+    cursor: pointer;
+    transition: color 0.3s ease;
+    color: #000000;
+}
+
+#hire a {
+    color: white;
+    text-decoration: none;
+}
+
+#hire a:hover {
+    color: #00bfff;
+    transform: scale(1.1);
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+header nav ul li:hover {
+    color: #ff5500;
+}
+
+
+
+
+/* Intro Section */
+main .intro {
+    text-align: left;
+    padding: 3rem 2rem;
+    /*background-image:
+        url('1318500.jpeg'),
+        linear-gradient(to bottom, transparent, #000 40%);*/
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+main .intro h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    color: #1b413d;
+}
+
+main .intro p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #294644;
+}
+
+main .buttons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+main .buttons button {
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+main .buttons #whatsapp-button {
+    background-color: #25D366;
+    color: #fff;
+}
+
+main .buttons #whatsapp-button:hover {
+    background-color: #1DA94B;
+}
+
+main .buttons #email-button {
+    background-color: #444;
+    color: #fff;
+}
+
+main .buttons #email-button:hover {
+    background-color: #666;
+}
+
+#copy-response {
+    font-size: 0.9rem;
+    color: #25D366;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Dropdown Menus */
+#recent-work-dropdown,
+#contact-dropdown {
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    background-color: #222222;
+    padding: 1rem;
+    border-radius: 9px;
+    display: none;
+    z-index: 10;
+}
+
+#recent-work-dropdown .work-item,
+#contact-dropdown p {
+    margin: 0.5rem 0;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+#recent-work-dropdown .work-item {
+    color: #fdfdfd;
+    text-decoration: none;
+}
+
+#recent-work-dropdown .work-item:hover,
+#contact-dropdown p:hover {
+    color: #ffffff;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    transform: scale(1.1);
+}
+
+#recent-work-dropdown .work-item:hover {
+    color: #00fd15;
+}
+
+#contact-dropdown a {
+    color: #fdfdfd;
+    text-decoration: none;
+}
+
+#contact-dropdown a:hover {
+    color: #00fd15;
+}
+
+/* Links Section */
+.links-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.link-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.link-item:nth-child(1) {
+    background-color: #564bee;
+}
+
+.link-item:nth-child(2) {
+    background-color: #00a6e7;
+}
+
+.link-item:nth-child(3) {
+    background-color: #28a745;
+}
+
+.link-item:nth-child(4) {
+    background-color: #ffc107;
+}
+
+.link-item:hover {
+    transform: scale(1.1);
+}
+
+/* About Me Section */
+.about-me {
+    text-align: center;
+    margin: 16rem auto;
+    padding: 2rem;
+    background-color: #eddcd9(0, 0, 0, 0.7);
+    border-radius: 10px;
+    width: 80%;
+    color: #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about-me h2 {
+    font-size: 2rem;
+    color: #141414;
+    margin-bottom: 1rem;
+}
+
+.about-me p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+/* My Skill Section */
+.my-skill {
+    text-align: center;
+    margin: 16rem auto;
+    padding: 2rem;
+    background-color: #f2ebe9;
+    border-radius: 10px;
+    width: 80%;
+    color: #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.my-skill h2 {
+    font-size: 2rem;
+    color: #141414;
+    margin-bottom: 1rem;
+}
+
+.my-skill p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+.tool-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.tool-icons .tool-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #333;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.tool-icons .tool-icon img {
+    width: 50%;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
+.tool-icons .tool-icon:hover {
+    transform: scale(1.2);
+    background-color: #555;
+}
+
+.tool-icons .tool-icon span {
+    font-size: 1rem;
+    color: #fff;
+}
+
+/* Styles for Resume Section */
+.resume {
+    text-align: center;
+    margin: 16rem auto;
+    padding: 2rem;
+    background-color: #f2ebe9;
+    border-radius: 10px;
+    width: 80%;
+    color: #141414;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.resume h2 {
+    margin-bottom: 25px;
+    font-size: 2rem;
+    color: #000000;
+}
+.resume-content {
+    display: flex;
+    gap: 50px;
+}
+.education h3 ,
+.projects h3 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.education h4 ,
+.projects h4 {
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 8px;
+    margin-bottom: 0.5rem;
+}
+.education h5 ,
+.projects h5 {
+    font-size: 1rem;
+    color: #686868;
+    margin-bottom: 1px;
+}
+.education h6 ,
+.projects h6 {
+    font-size: 1rem;
+    font-weight: normal;
+    margin-bottom: 25px;
+}
+
+/* Styles for Research Section */
+.research-content {
+    text-align: center;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #f2ebe9;
+    border-radius: 10px;
+    width: 80%;
+    color: #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Full-width section */
+.full-width-section {
+    padding: 50px;
+    border-radius: 10px;
+    background-color: #e2dad8;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.full-width-section h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #000000;
+}
+.full-width-section h3 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #000000;
+}
+
+.full-width-section p {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+/* Two-column section */
+.two-column-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+    padding: 50px;
+    border-radius: 10px;
+    background-color: #e2dad8;
+    color: #000000;
+}
+
+.text-column {
+    width: 48%;
+}
+.text-column h3 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.text-column ul {
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+.text-column ul li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.image-column {
+    width: 48%;
+}
+
+.image-column img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    /* Full-width sections */
+    .full-width-section {
+        padding: 20px;
+    }
+
+    .full-width-section h2,
+    .full-width-section h3 {
+        font-size: 1.8em;
+    }
+
+    .two-column-section {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .text-column,
+    .image-column {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .text-column ul li {
+        font-size: 1em;
+    }
+
+    .image-column img {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+}
+
+
+
+/*FOR HIRE ME BUTTON POPUP*/
+#hireMeBtn {
+    padding: 5px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#hireMeBtn:hover {
+    background-color: #0056b3;
+}
+
+/* Popup Styles */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    pointer-events: none;
+    /* Disable interaction when hidden */
+    transition: opacity 0.3s ease, pointer-events 0s ease 0.3s;
+    /* Smooth fade-in/out */
+}
+
+.popup.show {
+    opacity: 1;
+    pointer-events: auto;
+    /* Re-enable interaction when shown */
+}
+
+textarea {
+    resize: none;
+    height: 70px;
+}
+
+.popup-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    text-align: left;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+    transform: translateY(-30px);
+    /* Start slightly above */
+    transition: transform 0.3s ease;
+    /* Smooth transition for sliding effect */
+}
+
+.popup.show .popup-content {
+    transform: translateY(0);
+    /* Slide to its original position */
+}
+
+.popup-content textarea,
+.popup-content input,
+.popup-content select {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.popup-content button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup-content button:hover {
+    background-color: #218838;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
